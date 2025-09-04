@@ -1,52 +1,70 @@
 <!DOCTYPE html>
-
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
+<html>
+    <head>
+        <title>Page Title</title>
         <style type="text/css" media="all">
             body{
-                background-color: #ff00b6;
+                background-color: #ff2773;
             }
-            .one{
-                background-color: #009AFF;
-                position: absolute;
-                top: 7em;
-                right: 4em;
-                height: 6em;
-                width: 6em;
-            }
-            #two{
+            #one{
                 position: absolute;
                 height: 5em;
                 width: 5em;
                 background-color: #F000FF;
+                top: 50%;
+                left: 10em;
             }
             p{
                 font-family: Georgia;
                 position: absolute;
-                top: 50%;
                 font-size: 4em;
-                color: #CFFFF9;
+                display: none;
+                top: 20%;
+                left: 0.8em;
+            }
+            #num1{
+                font-family: Arial;
+                font-size: 5em;
+                position: absolute;
+                left: 2em;
                 display: inline;
+            }
+            progress{
+                height: 3em;
+                position: absolute;
+                top: 70%;
+                left: 6em
+                
             }
         </style>
     </head>
     <body>
-        <div class="one">
-            
-        </div>
-        <button id="two"></button>
-        <p></p>
+        <button id="one"></button>
+        <p id="two">BRIGHT</p>
+        <b id="num1">0</b>
+        <button id="fornum">click</button>
+        <progress></progress>
         
     </body>
     <script>
-        var but = document.getElementById("two");
+        var but = document.getElementById("one");
+        var tex=document.getElementById("two");
+        var num=document.getElementById("num1");
+        var one=document.getElementById("fornum");
+        one.onclick=ednum;
         but.onclick=button;
-        but.onclick=numb;
         function button(){
-            but.style.backgroundColor=
+            tex.style.color="#0002FF";
+            tex.style.display="inline";
+        }
+        function ednum(){
+           let yeet=15;
+           if(yeet>=33){
+            console.log(yeet)
+           }
+           else
+           console.log(yeet)
+           yeet++
+        }
     </script>
 </html>
