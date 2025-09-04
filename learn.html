@@ -42,6 +42,8 @@
                 position: absolute;
                 top: 70%;
                 left: 6em
+                background-color: #f0f0f0;
+                border: 1ps solid green;
                 
             }
         </style>
@@ -65,14 +67,14 @@
             tex.style.color="#0002FF";
             tex.style.display="inline";
         }
+        let num_=0;
+        let targetNum=100;
         function ednum(){
-           let yeet=15;
-           if(yeet>=33){
-            console.log(yeet)
-           }
-           else
-           console.log(yeet)
-           yeet++
+            if(num_<targetNum){
+                num_++;
+                num.innerHTML=num_;
+                setTimeout(ednum,50);
+            }
         }
     </script>
 </html>
