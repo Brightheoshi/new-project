@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Page Title</title>
+        <style type="text/css" media="all">
+            body{
+                background-color: #ff2773;
+            }
+            .one{
+                background-color: #009AFF;
+                position: absolute;
+                top: 7em;
+                right: 4em;
+                height: 6em;
+                width: 6em;
+            }
+            #two{
+                position: absolute;
+                height: 5em;
+                width: 5em;
+                background-color: #F000FF;
+            }
+            p{
+                font-family: Georgia;
+                position: absolute;
+                top: 50%;
+                font-size: 4em;
+                color: #CFFFF9;
+                display: inline;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="one">
+            
+        </div>
+        <button id="two"></button>
+        <p></p>
+        
+    </body>
+    <script>
+        var but = document.getElementById("two");
+        but.onclick=button;
+        but.onclick=numb;
+        function button(){
+            but.style.backgroundColor="#006BFF";
+        }
+        function numb(a,b){
+            a=3;
+            b=3;
+        }
+        var c=5;
+        var d=10;
+        if(c>=d){
+            alert("rrrr");
+        } else{
+            alert("ttttt");
+        }
+        
+        
+    </script>
+</html>
